@@ -12,8 +12,8 @@ export CROSS_COMPILE=/home/francesco/arm-eabi-4.9-linaro/bin/arm-eabi-
 ##########################################
 mkdir output
 ##########################################
-make -C $(pwd) O=output cyanogenmod_hammerhead_defconfig 
-make -C $(pwd) O=output
+make -C $(pwd) O=output lineageos_hammerhead_defconfig 
+make -j64 -C $(pwd) O=output
 ##########################################
 cp output/arch/arm/boot/Image $(pwd)/arch/arm/boot/zImage
 ##########################################
